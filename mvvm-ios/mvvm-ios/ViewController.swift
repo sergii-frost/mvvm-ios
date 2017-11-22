@@ -26,6 +26,11 @@ class ViewController: UIViewController {
         demoLog(inputTextField.text)
     }
     
+    @IBAction func clear(_ sender: Any) {
+        debugTextView.text = ""
+        inputTextField.text = nil
+    }
+    
     fileprivate func demoLog(_ message: String?) {
         guard let message = message, !message.isEmpty else {
             return

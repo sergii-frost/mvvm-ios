@@ -30,18 +30,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c55-U6-6B4">
-                                <rect key="frame" x="16" y="74" width="343" height="30"/>
+                                <rect key="frame" x="16" y="74" width="163.5" height="30"/>
                                 <state key="normal" title="Push me!">
                                     <color key="titleColor" red="0.35294117650000001" green="0.56862745100000001" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.borderWidth">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="self.layer.borderColor">
-                                        <color key="value" red="0.35294117650000001" green="0.56862745100000001" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pushMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdf-xV-8Tc"/>
                                 </connections>
@@ -53,6 +45,15 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khj-BF-wFh">
+                                <rect key="frame" x="195.5" y="74" width="163.5" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.94780409340000005" green="0.64726728200000005" blue="0.22723336520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="poL-mU-JD3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,12 +61,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ChK-Jr-68h" secondAttribute="bottom" constant="16" id="9DE-dd-bj4"/>
                             <constraint firstItem="ChK-Jr-68h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cvz-74-TAE"/>
                             <constraint firstItem="c55-U6-6B4" firstAttribute="top" secondItem="km5-jQ-fdb" secondAttribute="bottom" constant="8" id="DP1-TM-DA3"/>
+                            <constraint firstItem="khj-BF-wFh" firstAttribute="leading" secondItem="c55-U6-6B4" secondAttribute="trailing" constant="16" id="J2s-ee-MfH"/>
+                            <constraint firstItem="khj-BF-wFh" firstAttribute="centerY" secondItem="c55-U6-6B4" secondAttribute="centerY" id="QPY-fi-O5V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ChK-Jr-68h" secondAttribute="trailing" constant="16" id="Tuf-tm-NoR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="km5-jQ-fdb" secondAttribute="trailing" constant="16" id="Vy5-SZ-KtI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="khj-BF-wFh" secondAttribute="trailing" constant="16" id="Yna-aE-Kq2"/>
                             <constraint firstItem="km5-jQ-fdb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bOt-aR-ION"/>
                             <constraint firstItem="km5-jQ-fdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jEz-WH-jJu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c55-U6-6B4" secondAttribute="trailing" constant="16" id="kRG-St-jRF"/>
                             <constraint firstItem="c55-U6-6B4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="n0W-t2-JXN"/>
+                            <constraint firstItem="khj-BF-wFh" firstAttribute="width" secondItem="c55-U6-6B4" secondAttribute="width" id="o5m-ll-0Tv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
