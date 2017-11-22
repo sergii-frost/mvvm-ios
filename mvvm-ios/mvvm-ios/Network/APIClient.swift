@@ -15,7 +15,11 @@ let POST = Alamofire.HTTPMethod.post
 let PUT = Alamofire.HTTPMethod.put
 let DELETE = Alamofire.HTTPMethod.delete
 
+let kInvalidUrlStatusCode = 2038
+let kInvalidUrlMessage = "Your url is invalid: "
+
 let kBaseUrl = "https://api.github.com"
+let kUserPath = "/users/"
 
 public class APIClient {
     
