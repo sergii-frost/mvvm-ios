@@ -37,11 +37,24 @@
                                         <color key="value" red="0.35294117650000001" green="0.56862745100000001" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdf-xV-8Tc"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ChK-Jr-68h">
+                                <rect key="frame" x="16" y="120" width="343" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ChK-Jr-68h" firstAttribute="top" secondItem="c55-U6-6B4" secondAttribute="bottom" constant="16" id="0gT-dw-jVQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ChK-Jr-68h" secondAttribute="bottom" constant="16" id="9DE-dd-bj4"/>
+                            <constraint firstItem="ChK-Jr-68h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cvz-74-TAE"/>
                             <constraint firstItem="c55-U6-6B4" firstAttribute="top" secondItem="km5-jQ-fdb" secondAttribute="bottom" constant="8" id="DP1-TM-DA3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ChK-Jr-68h" secondAttribute="trailing" constant="16" id="Tuf-tm-NoR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="km5-jQ-fdb" secondAttribute="trailing" constant="16" id="Vy5-SZ-KtI"/>
                             <constraint firstItem="km5-jQ-fdb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bOt-aR-ION"/>
                             <constraint firstItem="km5-jQ-fdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jEz-WH-jJu"/>
@@ -50,6 +63,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="debugTextView" destination="ChK-Jr-68h" id="BVa-qQ-sqO"/>
+                        <outlet property="inputTextField" destination="km5-jQ-fdb" id="YgF-Q6-WPI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
