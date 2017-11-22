@@ -23,7 +23,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func pushMe(_ sender: Any) {
-        demoLog(inputTextField.text)
+        guard let input = inputTextField.text else {
+            demoLog("No input - nothing to ask for")
+            return
+        }
+        GithubService.shared.getUserProfile(
+            with: input,
+            success: { [weak self] (userJson: String) in
+                self?.demoLog(userJson)
+            },
+            failure: { [weak self] (message, statusCode) in
+                self?.demoLog(message)
+            }
+        )
     }
     
     @IBAction func clear(_ sender: Any) {
