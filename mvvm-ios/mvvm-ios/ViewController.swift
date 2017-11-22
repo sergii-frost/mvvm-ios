@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var debugTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func pushMe(_ sender: Any) {
+        demoLog(inputTextField.text)
+    }
+    
+    @IBAction func clear(_ sender: Any) {
+        debugTextView.text = ""
+        inputTextField.text = nil
+    }
+    
+    fileprivate func demoLog(_ message: String?) {
+        guard let message = message, !message.isEmpty else {
+            return
+        }
+        debugTextView.text = "\(message)\n\(debugTextView.text ?? "")"
+    }
 }
 
