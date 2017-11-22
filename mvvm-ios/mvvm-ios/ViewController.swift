@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     fileprivate func demoLog(_ message: String?) {
-        guard let message = message else {
+        guard let message = message, !message.isEmpty else {
             return
         }
         debugTextView.text = "\(message)\n\(debugTextView.text ?? "")"
