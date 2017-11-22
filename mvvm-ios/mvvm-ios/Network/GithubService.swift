@@ -9,6 +9,8 @@
 import Foundation
 import Unbox
 
+typealias SuccessSimpleCallback = (String) -> Void
+
 public class GithubService {
     
     static let shared = GithubService()
@@ -32,5 +34,23 @@ public class GithubService {
             }
             
         }, failure: failure)
+    }
+    
+    func getUserProfile(with username: String, success: @escaping SuccessSimpleCallback, failure: @escaping APIFailureCallback) {
+        APIClient.getUserProfile(username: username, success: { userResponse in
+            GithubService.handleSimpleCallback(withData: userResponse, success: success, failure: failure)
+        }, failure: failure)
+    }
+    
+    fileprivate static func handleSimpleCallback(withData data: Data?, success: @escaping SuccessSimpleCallback, failure: @escaping APIFailureCallback) {
+        guard let data = data else {
+            failure(kUnknownMessage, kUnknownStatusCode)
+            return
+        }
+        if let stringData = String(data: data, encoding: .utf8) {
+            success(stringData)
+        } else {
+            failure(kUnknownMessage, kUnknownStatusCode)
+        }
     }
 }
