@@ -11,7 +11,7 @@ import Unbox
 
 public class GithubService {
     
-    let shared = GithubService()
+    static let shared = GithubService()
     
     private init() {
         //Avoid public instantiation
