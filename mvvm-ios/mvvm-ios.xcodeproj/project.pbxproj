@@ -10,6 +10,7 @@
 		458BC4FE1FC5FFB200395B82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BC4FD1FC5FFB200395B82 /* APIClient.swift */; };
 		458BC5021FC60E6600395B82 /* NetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BC5011FC60E6600395B82 /* NetworkInterceptor.swift */; };
 		458BC5061FC6139100395B82 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BC5051FC6139100395B82 /* APIError.swift */; };
+		458BC50D1FC61C5E00395B82 /* GHUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BC50C1FC61C5E00395B82 /* GHUser.swift */; };
 		45F085E81FC5DFFC0067478E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F085E71FC5DFFC0067478E /* AppDelegate.swift */; };
 		45F085EA1FC5DFFC0067478E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F085E91FC5DFFC0067478E /* ViewController.swift */; };
 		45F085ED1FC5DFFC0067478E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F085EB1FC5DFFC0067478E /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		458BC4FD1FC5FFB200395B82 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		458BC5011FC60E6600395B82 /* NetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptor.swift; sourceTree = "<group>"; };
 		458BC5051FC6139100395B82 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		458BC50C1FC61C5E00395B82 /* GHUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUser.swift; sourceTree = "<group>"; };
 		45F085E41FC5DFFC0067478E /* mvvm-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvvm-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F085E71FC5DFFC0067478E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45F085E91FC5DFFC0067478E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		458BC50B1FC61C4200395B82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				458BC50C1FC61C5E00395B82 /* GHUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		45F085DB1FC5DFFC0067478E = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		45F085E61FC5DFFC0067478E /* mvvm-ios */ = {
 			isa = PBXGroup;
 			children = (
+				458BC50B1FC61C4200395B82 /* Model */,
 				458BC4FC1FC5FF9900395B82 /* Network */,
 				45F085E71FC5DFFC0067478E /* AppDelegate.swift */,
 				45F085E91FC5DFFC0067478E /* ViewController.swift */,
@@ -243,6 +254,7 @@
 				45F085EA1FC5DFFC0067478E /* ViewController.swift in Sources */,
 				45F085E81FC5DFFC0067478E /* AppDelegate.swift in Sources */,
 				458BC5021FC60E6600395B82 /* NetworkInterceptor.swift in Sources */,
+				458BC50D1FC61C5E00395B82 /* GHUser.swift in Sources */,
 				458BC5061FC6139100395B82 /* APIError.swift in Sources */,
 				458BC4FE1FC5FFB200395B82 /* APIClient.swift in Sources */,
 			);
