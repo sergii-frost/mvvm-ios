@@ -1,22 +1,28 @@
 PODS:
   - Alamofire (4.5.1)
+  - Kingfisher (4.3.1)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
+  - SVProgressHUD (2.2.2)
   - Unbox (2.5.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - Kingfisher (~> 4.3)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - SVProgressHUD (~> 2.2)
   - Unbox (~> 2.5)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Kingfisher: 75541c4b62f02e1fde6f9772303de3d9ebe8f5b3
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: efb1e8a3b8abda3fbba4a8837a806b109f69bad8
+PODFILE CHECKSUM: ca4bf6322fe4fa58e759f96676e3e1290debffdd
 
 COCOAPODS: 1.3.1

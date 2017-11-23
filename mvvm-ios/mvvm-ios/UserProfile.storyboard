@@ -28,6 +28,11 @@
                                             <constraint firstAttribute="width" secondItem="DZE-3b-i6y" secondAttribute="height" multiplier="1:1" id="8LF-2G-UGx"/>
                                             <constraint firstAttribute="height" constant="200" id="H6I-hC-Eg8"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjH-BI-ooe" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="224" width="375" height="410"/>
