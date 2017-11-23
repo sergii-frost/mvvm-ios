@@ -45,10 +45,15 @@ class ViewController: UIViewController {
     
     @IBAction func openProfile(_ sender: Any) {
         let storyboard = UIStoryboard(name: "UserProfile", bundle: Bundle.main)
-        guard let viewController = storyboard.instantiateInitialViewController() else {
+        guard let initialViewController = storyboard.instantiateInitialViewController() else {
             demoLog("Could not instantiate view controller for user profile")
             return
         }
+        guard let viewController: UserProfileViewController = initialViewController as? UserProfileViewController else {
+            demoLog("Initial ViewController is not of required type")
+            return
+        }
+        viewController.username = inputTextField.text
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

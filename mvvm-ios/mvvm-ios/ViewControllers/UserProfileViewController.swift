@@ -28,6 +28,38 @@ public class UserProfileViewController: UIViewController {
     @IBOutlet weak var gistsContainerView: UIView!
     @IBOutlet weak var gistsLabel: UILabel!
     
+    var username: String?
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        fetchUserProfile()
+    }
+    
+    func fetchUserProfile() {
+        guard let username = username else {
+            self.handleError(message: "Username is empty, cannot fetch data", statusCode: 404)
+            return
+        }
+        
+        GithubService.shared.getUserProfile(with: username, success: { [weak self] user in
+            self?.updateUI(with: user)
+        }, failure: { [weak self] message, statusCode in
+            self?.handleError(message: message, statusCode: statusCode)
+        })
+    }
+    
+    func updateUI(with user: GHUser) {
+        
+        MessageHelper.showMessage(
+            forType: .success,
+            title: "Great success!",
+            message: "User profile for \(username ?? "") was successfully fetched")
+    }
+    
+    func handleError(message: String, statusCode: Int) {
+        MessageHelper.showMessage(forType: .error, message: message)
+    }
+    
     //MARK: IBActions
     
     @IBAction func showRepos(_ sender: Any) {
