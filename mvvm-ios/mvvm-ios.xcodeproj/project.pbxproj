@@ -67,6 +67,7 @@
 		4588B2381FC766C200F1E8A9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				45F085E91FC5DFFC0067478E /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -117,7 +118,6 @@
 				458BC50B1FC61C4200395B82 /* Models */,
 				4588B2381FC766C200F1E8A9 /* ViewControllers */,
 				45F085E71FC5DFFC0067478E /* AppDelegate.swift */,
-				45F085E91FC5DFFC0067478E /* ViewController.swift */,
 				45F085EB1FC5DFFC0067478E /* Main.storyboard */,
 				4539A14A1FC71EBC003C79D7 /* UserProfile.storyboard */,
 				45F085EE1FC5DFFC0067478E /* Assets.xcassets */,
