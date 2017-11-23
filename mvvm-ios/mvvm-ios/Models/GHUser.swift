@@ -50,6 +50,7 @@ struct GHUser {
     let location: String
     let email: String?
     let bio: String?
+    let blog: String?
     let followers: Int
     let following: Int
     let createdAt: Date
@@ -75,6 +76,7 @@ extension GHUser: Unboxable {
         self.location = try unboxer.unbox(key: "location")
         self.email = unboxer.unbox(key: "email")
         self.bio = unboxer.unbox(key: "bio")
+        self.blog = unboxer.unbox(key: "blog")
         self.followers = try unboxer.unbox(key: "followers")
         self.following = try unboxer.unbox(key: "following")
         self.createdAt = try unboxer.unbox(key: "created_at", formatter: GHUser.dateFormatter)
