@@ -5,6 +5,7 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - SVProgressHUD (2.2.2)
+  - SwiftMessages (4.1.0)
   - Unbox (2.5.0)
 
 DEPENDENCIES:
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SVProgressHUD (~> 2.2)
+  - SwiftMessages (~> 4.1)
   - Unbox (~> 2.5)
 
 SPEC CHECKSUMS:
@@ -21,8 +23,9 @@ SPEC CHECKSUMS:
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: ca4bf6322fe4fa58e759f96676e3e1290debffdd
+PODFILE CHECKSUM: 1cc6e4a1877cace0b0b88caf48083f2ea276e464
 
 COCOAPODS: 1.3.1
