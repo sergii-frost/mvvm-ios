@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 public class UserProfileViewController: UIViewController {
     
@@ -30,6 +31,12 @@ public class UserProfileViewController: UIViewController {
     
     var username: String?
     
+    fileprivate lazy var dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MMM yyyy"
+        return dateFormatter
+    }()
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         fetchUserProfile()
@@ -48,12 +55,62 @@ public class UserProfileViewController: UIViewController {
         })
     }
     
-    func updateUI(with user: GHUser) {
+    func updateUI(with user: GHUser) {        
+        if let url = URL(string: user.avatarUrl) {
+            avatarImageView.kf.setImage(with: url)
+        }
+        nameLabel.text = user.name
+        loginLabel.text = user.login
         
-        MessageHelper.showMessage(
-            forType: .success,
-            title: "Great success!",
-            message: "User profile for \(username ?? "") was successfully fetched")
+        if let bio = user.bio, !bio.isEmpty {
+            bioTextView.isHidden = false
+            bioTextView.text = bio
+        } else {
+            bioTextView.isHidden = true
+        }
+        createdLabel.text = dateFormatter.string(from: user.createdAt)
+        
+        if let company = user.company, !company.isEmpty {
+            companyContainerView.isHidden = false
+            companyLabel.text = company
+        } else {
+            companyContainerView.isHidden = true
+        }
+        
+        if let location = user.location, !location.isEmpty {
+            locationContainerView.isHidden = false
+            locationLabel.text = location
+        } else {
+            locationContainerView.isHidden = true
+        }
+        
+        if let email = user.email, !email.isEmpty {
+            emailContainerView.isHidden = false
+            emailLabel.text = email
+        } else {
+            emailContainerView.isHidden = true
+        }
+        
+        if let link = user.blog, !link.isEmpty {
+            linkContainerView.isHidden = false
+            linkLabel.text = link
+        } else {
+            linkContainerView.isHidden = true
+        }
+        
+        if user.publicRepos > 0 {
+            reposContainerView.isHidden = false
+            reposLabel.text = "Public Repos #: \(user.publicRepos)"
+        } else {
+            reposContainerView.isHidden = true
+        }
+        
+        if user.publicGists > 0 {
+            gistsContainerView.isHidden = false
+            gistsLabel.text = "Public Gists #: \(user.publicGists)"
+        } else {
+            gistsContainerView.isHidden = true
+        }
     }
     
     func handleError(message: String, statusCode: Int) {
