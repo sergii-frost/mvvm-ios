@@ -47,7 +47,7 @@ struct GHUser {
     let avatarUrl: String
     let name: String
     let company: String?
-    let location: String
+    let location: String?
     let email: String?
     let bio: String?
     let blog: String?
@@ -73,7 +73,7 @@ extension GHUser: Unboxable {
         self.avatarUrl = try unboxer.unbox(key: "avatar_url")
         self.name = try unboxer.unbox(key: "name")
         self.company = unboxer.unbox(key: "company")
-        self.location = try unboxer.unbox(key: "location")
+        self.location = unboxer.unbox(key: "location")
         self.email = unboxer.unbox(key: "email")
         self.bio = unboxer.unbox(key: "bio")
         self.blog = unboxer.unbox(key: "blog")
