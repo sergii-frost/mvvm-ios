@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4539A14B1FC71EBC003C79D7 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4539A14A1FC71EBC003C79D7 /* UserProfile.storyboard */; };
 		458BC4FE1FC5FFB200395B82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BC4FD1FC5FFB200395B82 /* APIClient.swift */; };
 		458BC5021FC60E6600395B82 /* NetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BC5011FC60E6600395B82 /* NetworkInterceptor.swift */; };
 		458BC5061FC6139100395B82 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BC5051FC6139100395B82 /* APIError.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		152BE10C240AB8A986AA960B /* Pods_mvvm_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4539A14A1FC71EBC003C79D7 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
 		458BC4FD1FC5FFB200395B82 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		458BC5011FC60E6600395B82 /* NetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptor.swift; sourceTree = "<group>"; };
 		458BC5051FC6139100395B82 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				45F085E71FC5DFFC0067478E /* AppDelegate.swift */,
 				45F085E91FC5DFFC0067478E /* ViewController.swift */,
 				45F085EB1FC5DFFC0067478E /* Main.storyboard */,
+				4539A14A1FC71EBC003C79D7 /* UserProfile.storyboard */,
 				45F085EE1FC5DFFC0067478E /* Assets.xcassets */,
 				45F085F01FC5DFFC0067478E /* LaunchScreen.storyboard */,
 				45F085F31FC5DFFC0067478E /* Info.plist */,
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F085F21FC5DFFC0067478E /* LaunchScreen.storyboard in Resources */,
+				4539A14B1FC71EBC003C79D7 /* UserProfile.storyboard in Resources */,
 				45F085EF1FC5DFFC0067478E /* Assets.xcassets in Resources */,
 				45F085ED1FC5DFFC0067478E /* Main.storyboard in Resources */,
 			);
