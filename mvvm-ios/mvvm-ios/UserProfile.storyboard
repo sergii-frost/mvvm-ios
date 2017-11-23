@@ -239,6 +239,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="VYm-M2-4PU" firstAttribute="leading" secondItem="haW-MR-stZ" secondAttribute="leading" id="Tax-uy-Cn7"/>
                                                             <constraint firstItem="kFr-3u-8O9" firstAttribute="leading" secondItem="VYm-M2-4PU" secondAttribute="trailing" constant="8" id="VvQ-yv-gut"/>
@@ -250,6 +251,9 @@
                                                             <constraint firstItem="bs9-zg-LaG" firstAttribute="leading" secondItem="kFr-3u-8O9" secondAttribute="trailing" constant="8" id="vkw-zc-sQ6"/>
                                                             <constraint firstAttribute="trailing" secondItem="bs9-zg-LaG" secondAttribute="trailing" id="wlR-AQ-Mbf"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="CqO-tb-xkZ" appends="YES" id="8gn-JL-egg"/>
+                                                        </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9K-LK-HUK" userLabel="Gists View">
                                                         <rect key="frame" x="0.0" y="30" width="343" height="30"/>
@@ -274,6 +278,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="4Dq-uC-W0G"/>
                                                             <constraint firstAttribute="trailing" secondItem="oe1-Ek-dat" secondAttribute="trailing" id="5fB-7Y-sLk"/>
@@ -285,6 +290,9 @@
                                                             <constraint firstItem="oe1-Ek-dat" firstAttribute="leading" secondItem="BeF-92-wyE" secondAttribute="trailing" constant="8" id="squ-Au-bce"/>
                                                             <constraint firstItem="oe1-Ek-dat" firstAttribute="centerY" secondItem="Q8x-Gj-16U" secondAttribute="centerY" id="xDO-SJ-Uhk"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="2Pq-4H-g7s" appends="YES" id="eiP-LM-y1e"/>
+                                                        </connections>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -356,6 +364,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uc6-sY-gli" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CqO-tb-xkZ" userLabel="Repos Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="showRepos:" destination="DEh-GR-ucW" id="EPH-Fj-nLR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="2Pq-4H-g7s" userLabel="Gists Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="showGists:" destination="DEh-GR-ucW" id="96M-MC-mwh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-18.399999999999999" y="38.423645320197046"/>
         </scene>

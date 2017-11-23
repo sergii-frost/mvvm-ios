@@ -29,4 +29,14 @@ public class UserProfileViewController: UIViewController {
     @IBOutlet weak var gistsContainerView: UIView!
     @IBOutlet weak var gistsLabel: UILabel!
     
+    //MARK: IBActions
+    
+    @IBAction func showRepos(_ sender: Any) {
+        //TODO: implement
+    }
+    
+    @IBAction func showGists(_ sender: Any) {
+        //TODO: implement
+    }
+
 }
