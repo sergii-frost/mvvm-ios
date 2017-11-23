@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import Unbox
+import SVProgressHUD
 
 typealias APISuccessCallback = (Data?) -> Void
 typealias AlamofireSuccessCallback = (DataResponse<Any>) -> Void
@@ -58,7 +59,9 @@ public class NetworkInterceptor {
             mutableUrlRequest.httpMethod = method.rawValue
         }
         
+        SVProgressHUD.show()
         sessionManager.request(mutableUrlRequest).validate(statusCode: 200..<300).responseJSON { response in
+            SVProgressHUD.dismiss()
             response.result.ifSuccess {
                 success(response)
             }
