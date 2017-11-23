@@ -28,6 +28,21 @@ public class UserProfileViewController: UIViewController {
     @IBOutlet weak var gistsContainerView: UIView!
     @IBOutlet weak var gistsLabel: UILabel!
     
+    var viewModel: UserProfileViewModel?
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        setupBindings()
+        viewModel?.fetchProfile()
+    }
+    
+    fileprivate func setupBindings() {
+        guard let viewModel = viewModel else {
+            return
+        }
+        //TODO: setup bindings
+    }
+    
     //MARK: IBActions
     
     @IBAction func showRepos(_ sender: Any) {
