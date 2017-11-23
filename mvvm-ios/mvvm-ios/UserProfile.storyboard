@@ -14,7 +14,7 @@
         <!--Profile-->
         <scene sceneID="dAe-j4-haF">
             <objects>
-                <viewController title="Profile" id="DEh-GR-ucW" sceneMemberID="viewController">
+                <viewController title="Profile" id="DEh-GR-ucW" customClass="UserProfileViewController" customModule="mvvm_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ryk-bF-9Mm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,6 +334,26 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vW7-hl-3Hm"/>
                     </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="DZE-3b-i6y" id="u8Y-2K-BzB"/>
+                        <outlet property="bioTextView" destination="SnO-Hb-RgM" id="DpQ-8z-Kzi"/>
+                        <outlet property="createdContainerView" destination="gw2-jc-qY4" id="zZw-KZ-Kau"/>
+                        <outlet property="createdLabel" destination="XmR-hv-luT" id="ef4-Nq-Btd"/>
+                        <outlet property="emailContainerView" destination="hiZ-O7-3tr" id="lVx-h7-72f"/>
+                        <outlet property="emailLabel" destination="tKf-fX-L3f" id="ZVZ-X1-aS1"/>
+                        <outlet property="gistsContainerView" destination="h9K-LK-HUK" id="Qai-OL-cH8"/>
+                        <outlet property="gistsLabel" destination="BeF-92-wyE" id="u18-BT-3tA"/>
+                        <outlet property="linkLabel" destination="BfA-Rb-eCY" id="xRA-Ck-BZA"/>
+                        <outlet property="linkView" destination="RxN-Vq-sTT" id="X1J-h6-nxY"/>
+                        <outlet property="locationContainerView" destination="cwS-Gq-nHU" id="Rhi-Nm-d29"/>
+                        <outlet property="locationLabel" destination="0z4-h2-Tfg" id="J9c-K9-aQV"/>
+                        <outlet property="loginLabel" destination="hWu-oE-rcW" id="5pe-kf-FyX"/>
+                        <outlet property="nameLabel" destination="L8j-fu-cdA" id="hRR-0E-8Lo"/>
+                        <outlet property="organisationContainerView" destination="A3V-8r-BE1" id="69x-v9-cYh"/>
+                        <outlet property="organisationLabel" destination="Eks-TT-CGp" id="U6s-fm-cFs"/>
+                        <outlet property="reposContainerView" destination="haW-MR-stZ" id="g3s-HX-IeT"/>
+                        <outlet property="reposLabel" destination="kFr-3u-8O9" id="ipu-6g-X7z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uc6-sY-gli" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
