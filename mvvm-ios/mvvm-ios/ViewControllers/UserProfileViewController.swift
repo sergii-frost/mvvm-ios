@@ -14,10 +14,9 @@ public class UserProfileViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var bioTextView: UITextView!
-    @IBOutlet weak var createdContainerView: UIView!
     @IBOutlet weak var createdLabel: UILabel!
-    @IBOutlet weak var organisationContainerView: UIView!
-    @IBOutlet weak var organisationLabel: UILabel!
+    @IBOutlet weak var companyContainerView: UIView!
+    @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var locationContainerView: UIView!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var emailContainerView: UIView!

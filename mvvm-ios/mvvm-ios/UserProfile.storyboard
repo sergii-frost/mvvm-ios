@@ -104,7 +104,7 @@
                                                             <constraint firstItem="XmR-hv-luT" firstAttribute="leading" secondItem="587-Db-vfm" secondAttribute="trailing" constant="8" id="v7K-7T-7th"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3V-8r-BE1" userLabel="Organisation View">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3V-8r-BE1" userLabel="Company View">
                                                         <rect key="frame" x="0.0" y="34" width="343" height="30"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="organization" translatesAutoresizingMaskIntoConstraints="NO" id="Kel-DK-rM3">
@@ -114,7 +114,7 @@
                                                                     <constraint firstAttribute="width" constant="20" id="mxn-i6-RtP"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ORGANIZATION]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="Eks-TT-CGp">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[COMPANY]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="Eks-TT-CGp">
                                                                 <rect key="frame" x="28" y="7" width="315" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -350,7 +350,8 @@
                     <connections>
                         <outlet property="avatarImageView" destination="DZE-3b-i6y" id="u8Y-2K-BzB"/>
                         <outlet property="bioTextView" destination="SnO-Hb-RgM" id="DpQ-8z-Kzi"/>
-                        <outlet property="createdContainerView" destination="gw2-jc-qY4" id="zZw-KZ-Kau"/>
+                        <outlet property="companyContainerView" destination="A3V-8r-BE1" id="HbM-Op-dCD"/>
+                        <outlet property="companyLabel" destination="Eks-TT-CGp" id="b8I-Vo-6jJ"/>
                         <outlet property="createdLabel" destination="XmR-hv-luT" id="ef4-Nq-Btd"/>
                         <outlet property="emailContainerView" destination="hiZ-O7-3tr" id="lVx-h7-72f"/>
                         <outlet property="emailLabel" destination="tKf-fX-L3f" id="ZVZ-X1-aS1"/>
@@ -362,8 +363,6 @@
                         <outlet property="locationLabel" destination="0z4-h2-Tfg" id="J9c-K9-aQV"/>
                         <outlet property="loginLabel" destination="hWu-oE-rcW" id="5pe-kf-FyX"/>
                         <outlet property="nameLabel" destination="L8j-fu-cdA" id="hRR-0E-8Lo"/>
-                        <outlet property="organisationContainerView" destination="A3V-8r-BE1" id="69x-v9-cYh"/>
-                        <outlet property="organisationLabel" destination="Eks-TT-CGp" id="U6s-fm-cFs"/>
                         <outlet property="reposContainerView" destination="haW-MR-stZ" id="g3s-HX-IeT"/>
                         <outlet property="reposLabel" destination="kFr-3u-8O9" id="ipu-6g-X7z"/>
                     </connections>
