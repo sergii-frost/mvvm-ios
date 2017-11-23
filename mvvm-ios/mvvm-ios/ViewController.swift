@@ -43,6 +43,10 @@ class ViewController: UIViewController {
         inputTextField.text = nil
     }
     
+    @IBAction func openProfile(_ sender: Any) {
+        //TODO: implement
+    }
+    
     fileprivate func demoLog(_ message: String?) {
         guard let message = message, !message.isEmpty else {
             return

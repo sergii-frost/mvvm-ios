@@ -33,7 +33,7 @@
                                 <rect key="frame" x="16" y="118" width="343" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c55-U6-6B4">
-                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1Tr-q4-GjL"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khj-BF-wFh">
-                                        <rect key="frame" x="175.5" y="0.0" width="167.5" height="30"/>
+                                        <rect key="frame" x="117" y="0.0" width="109" height="30"/>
                                         <state key="normal" title="Clear">
                                             <color key="titleColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
                                         </state>
@@ -75,6 +75,24 @@
                                             <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="poL-mU-JD3"/>
                                         </connections>
                                     </button>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github_logo" translatesAutoresizingMaskIntoConstraints="NO" id="QHn-pk-3l4">
+                                        <rect key="frame" x="234" y="0.0" width="109" height="30"/>
+                                        <gestureRecognizers/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="VDE-6D-71T" appends="YES" id="a8n-dh-68C"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="khj-BF-wFh" firstAttribute="height" secondItem="c55-U6-6B4" secondAttribute="height" id="DrL-Nc-1aL"/>
@@ -115,6 +133,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VDE-6D-71T" userLabel="Github logo Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="openProfile:" destination="BYZ-38-t0r" id="eo5-dO-dTu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="866" y="133"/>
         </scene>
@@ -137,4 +160,7 @@
             <point key="canvasLocation" x="136" y="133.13343328335833"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="github_logo" width="170" height="170"/>
+    </resources>
 </document>
