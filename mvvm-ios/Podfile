@@ -10,4 +10,6 @@ target 'mvvm-ios' do
   pod 'RxCocoa', '~> 4.0'
   pod 'Alamofire', '~> 4.5'
   pod 'Unbox', '~> 2.5'
+  pod 'Kingfisher', '~> 4.3'
+  pod 'SVProgressHUD', '~> 2.2'
 end
