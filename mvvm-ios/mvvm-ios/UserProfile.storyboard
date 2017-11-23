@@ -55,7 +55,6 @@
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="[BIO HERE]" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnO-Hb-RgM">
                                                         <rect key="frame" x="0.0" y="0.0" width="339" height="100"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="0Yc-ln-eQR"/>
                                                         </constraints>
@@ -290,7 +289,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="qQG-Bw-doZ" firstAttribute="leading" secondItem="WjH-BI-ooe" secondAttribute="leading" id="0Zn-Yf-Zbu"/>
                                             <constraint firstAttribute="bottom" secondItem="7cm-i8-IVi" secondAttribute="bottom" id="BPW-Jd-Nnp"/>
@@ -314,6 +312,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="DZE-3b-i6y" firstAttribute="centerX" secondItem="kZt-XT-wLF" secondAttribute="centerX" id="1Ia-BG-bgS"/>
                                     <constraint firstAttribute="trailing" secondItem="WjH-BI-ooe" secondAttribute="trailing" constant="16" id="Ipb-Ox-yix"/>
