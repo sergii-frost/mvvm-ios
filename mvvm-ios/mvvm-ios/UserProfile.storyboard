@@ -357,8 +357,8 @@
                         <outlet property="emailLabel" destination="tKf-fX-L3f" id="ZVZ-X1-aS1"/>
                         <outlet property="gistsContainerView" destination="h9K-LK-HUK" id="Qai-OL-cH8"/>
                         <outlet property="gistsLabel" destination="BeF-92-wyE" id="u18-BT-3tA"/>
+                        <outlet property="linkContainerView" destination="RxN-Vq-sTT" id="TFa-WC-7RS"/>
                         <outlet property="linkLabel" destination="BfA-Rb-eCY" id="xRA-Ck-BZA"/>
-                        <outlet property="linkView" destination="RxN-Vq-sTT" id="X1J-h6-nxY"/>
                         <outlet property="locationContainerView" destination="cwS-Gq-nHU" id="Rhi-Nm-d29"/>
                         <outlet property="locationLabel" destination="0z4-h2-Tfg" id="J9c-K9-aQV"/>
                         <outlet property="loginLabel" destination="hWu-oE-rcW" id="5pe-kf-FyX"/>

@@ -21,7 +21,7 @@ public class UserProfileViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var emailContainerView: UIView!
     @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var linkView: UIView!
+    @IBOutlet weak var linkContainerView: UIView!
     @IBOutlet weak var linkLabel: UILabel!
     @IBOutlet weak var reposContainerView: UIView!
     @IBOutlet weak var reposLabel: UILabel!
