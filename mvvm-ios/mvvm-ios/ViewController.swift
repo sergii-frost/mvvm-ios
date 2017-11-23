@@ -43,6 +43,15 @@ class ViewController: UIViewController {
         inputTextField.text = nil
     }
     
+    @IBAction func openProfile(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "UserProfile", bundle: Bundle.main)
+        guard let viewController = storyboard.instantiateInitialViewController() else {
+            demoLog("Could not instantiate view controller for user profile")
+            return
+        }
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     fileprivate func demoLog(_ message: String?) {
         guard let message = message, !message.isEmpty else {
             return

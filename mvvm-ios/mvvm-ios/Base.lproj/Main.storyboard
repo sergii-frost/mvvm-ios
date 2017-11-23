@@ -29,47 +29,100 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c55-U6-6B4">
-                                <rect key="frame" x="16" y="118" width="163.5" height="30"/>
-                                <state key="normal" title="Push me!">
-                                    <color key="titleColor" red="0.35294117650000001" green="0.56862745100000001" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="pushMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdf-xV-8Tc"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lTa-hs-OZd">
+                                <rect key="frame" x="16" y="118" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c55-U6-6B4">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1Tr-q4-GjL"/>
+                                        </constraints>
+                                        <state key="normal" title="Push me!">
+                                            <color key="titleColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pushMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdf-xV-8Tc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khj-BF-wFh">
+                                        <rect key="frame" x="117" y="0.0" width="109" height="30"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="poL-mU-JD3"/>
+                                        </connections>
+                                    </button>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github_logo" translatesAutoresizingMaskIntoConstraints="NO" id="QHn-pk-3l4">
+                                        <rect key="frame" x="234" y="0.0" width="109" height="30"/>
+                                        <gestureRecognizers/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="VDE-6D-71T" appends="YES" id="a8n-dh-68C"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="khj-BF-wFh" firstAttribute="height" secondItem="c55-U6-6B4" secondAttribute="height" id="DrL-Nc-1aL"/>
+                                </constraints>
+                            </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ChK-Jr-68h">
                                 <rect key="frame" x="16" y="164" width="343" height="487"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khj-BF-wFh">
-                                <rect key="frame" x="195.5" y="118" width="163.5" height="30"/>
-                                <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.94780409340000005" green="0.64726728200000005" blue="0.22723336520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="poL-mU-JD3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ChK-Jr-68h" firstAttribute="top" secondItem="c55-U6-6B4" secondAttribute="bottom" constant="16" id="0gT-dw-jVQ"/>
+                            <constraint firstItem="lTa-hs-OZd" firstAttribute="top" secondItem="km5-jQ-fdb" secondAttribute="bottom" constant="8" id="0d2-tV-iq4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ChK-Jr-68h" secondAttribute="bottom" constant="16" id="9DE-dd-bj4"/>
                             <constraint firstItem="ChK-Jr-68h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cvz-74-TAE"/>
-                            <constraint firstItem="c55-U6-6B4" firstAttribute="top" secondItem="km5-jQ-fdb" secondAttribute="bottom" constant="8" id="DP1-TM-DA3"/>
-                            <constraint firstItem="khj-BF-wFh" firstAttribute="leading" secondItem="c55-U6-6B4" secondAttribute="trailing" constant="16" id="J2s-ee-MfH"/>
-                            <constraint firstItem="khj-BF-wFh" firstAttribute="centerY" secondItem="c55-U6-6B4" secondAttribute="centerY" id="QPY-fi-O5V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ChK-Jr-68h" secondAttribute="trailing" constant="16" id="Tuf-tm-NoR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="km5-jQ-fdb" secondAttribute="trailing" constant="16" id="Vy5-SZ-KtI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="khj-BF-wFh" secondAttribute="trailing" constant="16" id="Yna-aE-Kq2"/>
+                            <constraint firstItem="lTa-hs-OZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XiQ-ea-JnA"/>
                             <constraint firstItem="km5-jQ-fdb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bOt-aR-ION"/>
                             <constraint firstItem="km5-jQ-fdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jEz-WH-jJu"/>
-                            <constraint firstItem="c55-U6-6B4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="n0W-t2-JXN"/>
-                            <constraint firstItem="khj-BF-wFh" firstAttribute="width" secondItem="c55-U6-6B4" secondAttribute="width" id="o5m-ll-0Tv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lTa-hs-OZd" secondAttribute="trailing" constant="16" id="tdN-Pg-ZHp"/>
+                            <constraint firstItem="ChK-Jr-68h" firstAttribute="top" secondItem="lTa-hs-OZd" secondAttribute="bottom" constant="16" id="wdz-Ts-rFC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -80,6 +133,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VDE-6D-71T" userLabel="Github logo Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="openProfile:" destination="BYZ-38-t0r" id="eo5-dO-dTu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="866" y="133"/>
         </scene>
@@ -102,4 +160,7 @@
             <point key="canvasLocation" x="136" y="133.13343328335833"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="github_logo" width="170" height="170"/>
+    </resources>
 </document>
