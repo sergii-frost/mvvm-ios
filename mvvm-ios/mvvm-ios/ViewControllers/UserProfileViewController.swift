@@ -81,6 +81,14 @@ public class UserProfileViewController: UIViewController {
             }.bind(to: gistsLabel.rx.text)
             .disposed(by: disposeBag)
         
+        
+        viewModel.errorMessage.asObservable()
+            .filter { message -> Bool in
+                return message != nil
+            }.subscribe(onNext: { message in
+                MessageHelper.showMessage(forType: .error, message: message)
+            }).disposed(by: disposeBag)
+        
         setupVisibilityBindings()
     }
     

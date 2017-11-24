@@ -28,7 +28,7 @@ public class UserProfileViewModel {
     var reposUrl = Variable<String>("")
     var gistsUrl = Variable<String>("")
     
-    var message = Variable<String?>(nil)
+    var errorMessage = Variable<String?>(nil)
     var statusCode = Variable<Int>(0)
     
     public init(username: String?) {
@@ -39,7 +39,7 @@ public class UserProfileViewModel {
         GithubService.shared.getUserProfile(with: username ?? "", success: { [weak self] user in
             self?.update(withUser: user)
         }, failure: { [weak self] message, statusCode in
-            self?.message.value = message
+            self?.errorMessage.value = message
             self?.statusCode.value = statusCode
         })
     }
